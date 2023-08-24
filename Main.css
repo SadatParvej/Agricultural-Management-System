@@ -1,0 +1,111 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Header */
+header {
+  background-color: #2F4F4F;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.logo h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 0;
+  background-image: url("cropsfieldnew.png");
+  background-size: cover;
+  background-position: center;
+  color: rgb(25, 87, 31);
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.btn-container {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #2F4F4F;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* About Section */
+.about {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Footer */
+footer {
+  background-color: #2F4F4F;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    margin: 5px 0;
+  }
+
+  .btn-container {
+    flex-direction: column;
+  }
+}
